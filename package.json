@@ -10,6 +10,11 @@
 		"Other"
 	],
 	"main": "./out/extension.js",
+	"repository": {
+		"url": "https://github.com/MonoliskSoftware/ROBLOXTS-OPEN-LUAU",
+		"type": "git"
+	},
+	"activationEvents": [],
 	"contributes": {
 		"commands": [
 			{
