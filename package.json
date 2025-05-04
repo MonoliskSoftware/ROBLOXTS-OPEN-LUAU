@@ -36,6 +36,19 @@
 					"command": "robloxts-open-luau.openCompiledLuau",
 					"group": "navigation"
 				}
+			],
+			"editor/title/context": [
+				{
+					"when": "resourceExtname == .ts || resourceExtname == .tsx",
+					"command": "robloxts-open-luau.openCompiledLuau",
+					"group": "navigation"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "robloxts-open-luau.openCompiledLuau",
+					"when": "editorLangId == typescript || editorLangId == typescriptreact"
+				}
 			]
 		}
 	},
