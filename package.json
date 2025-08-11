@@ -2,7 +2,7 @@
 	"name": "robloxts-open-luau",
 	"displayName": "Roblox-TS Open Luau",
 	"description": "Right-click on TypeScript/TSX files in a Roblox-TS project to open the corresponding compiled Luau file",
-	"version": "0.0.1",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -20,13 +20,22 @@
 			{
 				"command": "robloxts-open-luau.openCompiledLuau",
 				"title": "Open Compiled Luau File"
-			}
+			},
+			{
+				"command": "robloxts-open-luau.copyResourceLocation",
+				"title": "Copy Resource Location"
+			  }
 		],
 		"menus": {
 			"explorer/context": [
 				{
 					"when": "resourceExtname == .ts || resourceExtname == .tsx",
 					"command": "robloxts-open-luau.openCompiledLuau",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceExtname == .ts || resourceExtname == .tsx",
+					"command": "robloxts-open-luau.copyResourceLocation",
 					"group": "navigation"
 				}
 			],
